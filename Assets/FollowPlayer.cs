@@ -2,16 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//this code makes camera follow player on only Y-axis
 public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
     void Update()
     {
         player = GameObject.FindWithTag("Player");
