@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - enemy
   - Wall
+  - projectile
   layers:
   - Default
   - TransparentFX

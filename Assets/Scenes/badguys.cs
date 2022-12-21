@@ -7,11 +7,13 @@ public class badguys : MonoBehaviour
 
     Vector3 dir;
     int badguysspeed=6;
+    public AudioScript audioscript;
 
     // Start is called before the first frame update
     void Start()
     {
         dir = new Vector3(1, 0, 0);
+        audioscript = GameObject.FindObjectOfType<AudioScript>();
 
     }
 
@@ -23,7 +25,7 @@ public class badguys : MonoBehaviour
 
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Wall")
         {
@@ -32,6 +34,7 @@ public class badguys : MonoBehaviour
         }
         if (collision.gameObject.tag=="projectile")
         {
+            audioscript.Explosion();
             Destroy(this.gameObject);
             //this destroys the obejct if it colides with a gameobejct with the tag projectile
         }

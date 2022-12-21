@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 14f04e0e2c7519342a4e29b45185fe2c
   - enabled: 1
+    path: Assets/Scenes/Adrian Level Design.unity
+    guid: ca094c9e62c208041bddd4df331576ec
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

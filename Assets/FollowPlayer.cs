@@ -10,6 +10,9 @@ public class FollowPlayer : MonoBehaviour
     void Update()
     {
         player = GameObject.FindWithTag("Player");
-        transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
+        if (transform.position.y <= 18.5f)
+        {
+            transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
+        }
     }
 }
